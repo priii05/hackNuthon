@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Image Display</title>
+    <style>
+        /* CSS for styling the image */
+        .image-container {
+            width: 300px; /* Set the width of the image container */
+            height: auto; /* Automatically adjust the height to maintain aspect ratio */
+            border: 2px solid black; /* Add a border around the image */
+            border-radius: 10px; /* Add rounded corners to the image */
+            overflow: hidden; /* Hide any overflow (e.g., if the image is larger than the container) */
+        }
+
+        .image-container img {
+            width: 100%; /* Set the width of the image to 100% of the container */
+            height: auto; /* Automatically adjust the height to maintain aspect ratio */
+            display: block; /* Ensure the image is displayed as a block element */
+        }
+    </style>
+</head>
+<body>
+    <h2>Embedded Image Display</h2>
+    
+    <!-- HTML for displaying the embedded image -->
+    <div class="image-container">
+        <!-- Use data URI as the source of the image -->
+        <img src="https://merientinfotech.com/wp-content/uploads/2019/12/java-training-banner.jpg" alt="Embedded Image">
+    </div>
+</body>
+</html>
